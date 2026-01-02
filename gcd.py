@@ -26,7 +26,7 @@ def gcd(a: int, b: int) -> int:
         a, b = b, a % b
     return abs(a)
     
-if __name__ == "__main__":
-    print(gcd(48, 18))   # expected: 6
-    print(gcd(17, 5))    # expected: 1
-    print(gcd(0, 7))     # expected: 7
+    if __name__ == "__main__":
+        print(gcd(48, 18))   # expected: 6
+        print(gcd(17, 5))    # expected: 1
+        print(gcd(0, 7))     # expected: 7
