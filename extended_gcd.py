@@ -6,11 +6,11 @@ of the Extended Euclidean algorithm to compute the GCD of two integers
 and the Bézout coefficients. 
 """
 
-def extended_gcd(a: int, b: int) ->
+def extended_gcd(a: int, b: int) -> tuple[int, int, int]
     u, g, v, y = 1, a, 0, b
     while y !=0:
       u, g, v, y = v, y, u-(g//y)*v, a%b
-    return (g,u,v)
+    return (abs(g),u,v)
 
 if __name__ == "__main__":
     print(gcd(48, 18))   # expected: (6,-1,3)
